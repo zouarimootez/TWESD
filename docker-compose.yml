@@ -1,0 +1,30 @@
+
+volumes:
+  ollama: 
+
+services:
+
+  # LLM ollama Service
+  ollama:
+    build: ./ollama
+    container_name: ollama
+    ports:
+      - "11434:11434"
+    network_mode: host
+    environment:
+      - OLLAMA_HOST=0.0.0.0:11434
+
+
+  # bee-agents Service
+  langchain:
+    build: ./agent_framework
+    container_name: langchain
+    depends_on:
+      - ollama
+    ports:
+      - "8001:8001"
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    volumes:
+      - ./langchain:/app
+    network_mode: host 

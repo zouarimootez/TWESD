@@ -3,11 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
  
-# Virtual environment directories
-env/
-venv/
-ENV/
-.venv/
+
  
 # Distribution/build artifacts
 *.egg-info/
@@ -50,12 +46,7 @@ coverage.xml
 *.cover
 .hypothesis/
  
-# Environment variables
-.env/*
-.env.*
-# *.env
-*.envrc
-voice-assistant-env
+
  
 # Test artifacts
 .tox/

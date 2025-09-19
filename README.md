@@ -1,4 +1,4 @@
-# Project Repository
+## Project Repository
 
 This repository contains two main directories:
 
@@ -24,8 +24,8 @@ Before you begin, ensure you have:
 ### 1. Clone the Repository
 Clone this repository and navigate into it:
 ```bash
-git clone <repository-url>
-cd <repository-name>
+git clone https://github.com/zouarimootez/TWESD.git
+cd TWESD
 ```
 ### 2. Set Up Environment Files
 
@@ -47,7 +47,7 @@ Edit the .env files:
 
 A docker-compose.yml file in the root directory manages services for both directories.
 
-# Start services:
+#### Start services:
 ```bash
 docker-compose up -d
 ```
@@ -57,7 +57,7 @@ This will:
 - Build and run the Ollama LLM container (from the ollama directory).
 - Start any defined services for agent_framework.
 
-# Stop services:
+#### Stop services:
 ```bash
 docker-compose down
 ```
@@ -75,6 +75,9 @@ docker-compose down
 ```bash
 pip install -r agent_framework/requirements.txt
 ```
+
+---
+
 ### 🛠️ Troubleshooting
 
 - Docker issues → Check if Docker/Docker Compose are installed and running.
@@ -86,5 +89,8 @@ docker-compose logs
 - Environment file issues → Ensure .env files are correctly configured and free of syntax errors.
 
 - Ollama LLM issues → Check internet connectivity and verify both Dockerfile and docker-compose.yml are valid.
+
+---
+
 
 For further assistance, see documentation in each directory or open an issue in this repository.

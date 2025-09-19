@@ -61,6 +61,8 @@ This will:
 ```bash
 docker-compose down
 ```
+
+---
 ### 📝 Notes
 
 - The .gitignore ensures sensitive files (like .env) are not tracked.
@@ -93,4 +95,4 @@ docker-compose logs
 ---
 
 
-For further assistance, see documentation in each directory or open an issue in this repository.
+For further assistance, contact me on zouarimootez@gmail.com or open an issue in this repository.
